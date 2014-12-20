@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/style.css"/>
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+
+  <script>
+  var audioArr = [
+    "http://incompetech.com/music/royalty-free/mp3-royaltyfree/Carefree.mp3",
+    "http://incompetech.com/music/royalty-free/mp3-royaltyfree/Despair%20and%20Triumph.mp3",
+    "http://incompetech.com/music/royalty-free/mp3-royaltyfree/Dream%20Culture.mp3",
+    "http://incompetech.com/music/royalty-free/mp3-royaltyfree/Inner%20Light.mp3",
+    "http://incompetech.com/music/royalty-free/mp3-royaltyfree/Facile.mp3",
+    "http://incompetech.com/music/royalty-free/mp3-royaltyfree/Drone%20in%20D.mp3",
+    "http://incompetech.com/music/royalty-free/mp3-royaltyfree/Light%20Thought%20var%202.mp3",
+    "http://incompetech.com/music/royalty-free/mp3-royaltyfree/Over%20Under.mp3",
+    "http://incompetech.com/music/royalty-free/mp3-royaltyfree/Jarvic%208.mp3",
+    "http://incompetech.com/music/royalty-free/mp3-royaltyfree/Moonstone.mp3",
+    "http://incompetech.com/music/royalty-free/mp3-royaltyfree/Midsummer%20Sky.mp3",
+    "http://incompetech.com/music/royalty-free/mp3-royaltyfree/Sad%20Trio.mp3",
+    "http://incompetech.com/music/royalty-free/mp3-royaltyfree/Winter%20Chimes.mp3"
+  ]
+  </script>
+
+
+</head>
+<body>
+  <div id="main_wrapper">
+    <audio id="player" src="" preload="auto" controls></audio>
+    <div id="controls">
+      <span onclick="nextSong();"><i class="fa fa-arrow-circle-left"></i> Next</span>
+      <span onclick="prevSong();">Previous <i class="fa fa-arrow-circle-right"></i></span>
+      <span onclick="randomSong();">Random <i class="fa fa-refresh"></i></span>
+    </div>
+    <div id="instructions">
+      <h2>Keyboard Shortcuts:</h2>
+      <ul>
+        <li>Press "." : Next Song</li>
+        <li>Press ",": Previous Song</li>
+        <li>Press "/": Random Song</li>
+        <li>Press [spacebar]: Play/Pause</li>
+      </ul>
+    </div>
+  </div>
+  <script src="js/main.js"></script>
+  <script src="js/third/mousetrap.js"></script>
+</body>
+</html>

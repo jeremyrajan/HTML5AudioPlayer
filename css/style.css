@@ -1,0 +1,19 @@
+body{
+  font-family: tahoma;
+}
+
+#controls{
+  margin: 10px 0;
+}
+
+
+#controls span{
+  padding: 5px;
+  background: cornflowerblue;
+  text-align: center;
+  cursor: pointer;
+  text-transform: capitalize;
+  color: white;
+  font-family: tahoma;
+  font-size: 12px;
+}
